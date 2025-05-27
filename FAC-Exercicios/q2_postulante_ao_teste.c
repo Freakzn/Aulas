@@ -45,7 +45,7 @@ float UmAluno(int matr, float cr){ // calcula o percentual da bolsa
 
     quebraMatr(matr, &area, &curso, &sequencial); //chamada obrigatoria
     percent_recom(area, cr, &minimo, &maximo); // chamada obrigatoria
-    percentual = minimo * 0.05 * curso; // calculo percentual
+    percentual = minimo + 0.05 * curso; // calculo percentual
     if(percentual > maximo){ // caso o percentual passe do percentual maximo 
         percentual = maximo;
     }
